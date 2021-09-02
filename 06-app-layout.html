@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>App Layout</title>
+    <style>
+      /* main color #0c8599 grey #343a40 2/4/8/12/16/24/32/48/64/80/96/128 10/12/14/16/18/20/24/30/36/44/52/62/74/86/98 */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Futura, sans-serif;
+        color: #343a40;
+        line-height: 1;
+        font-size: 24px;
+        height: 100vh;
+        text-align: center;
+        font-weight: bold;
+
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+      }
+
+      nav,
+      menu,
+      section,
+      main,
+      aside {
+        padding: 24px 0 0 0;
+      }
+
+      nav {
+        background-color: lime;
+        color: fuchsia;
+        /* text-shadow: 0 0 15px rgb(0, 0, 0); */
+        grid-row: 1 / -1;
+      }
+
+      menu {
+        background-color: fuchsia;
+        color: ghostwhite;
+        grid-column: 2 / -1;
+      }
+
+      button {
+        font-size: 16px;
+        background-color: lime;
+        border: none;
+        cursor: pointer;
+      }
+
+      section {
+        background-color: khaki;
+      }
+
+      aside {
+        background-color: khaki;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <button>New</button>
+      <button>Reply</button>
+      <button>Forward</button>
+      <button>Mark Unread</button>
+      <button>Trash</button>
+    </menu>
+    <section>Inbox</section>
+    <main>email</main>
+    <aside>Additional info</aside>
+    <script src="script.js"></script>
+  </body>
+</html>
