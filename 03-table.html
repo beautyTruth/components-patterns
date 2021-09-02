@@ -22,6 +22,36 @@
         font-family: Inter, sans-serif;
         color: #343a40;
         line-height: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      table {
+        width: 800px;
+        margin-top: 100px;
+        /* border: 1px solid #343a40; */
+        border-collapse: collapse;
+        font-size: 18px;
+      }
+
+      th,
+      td {
+        /* border: 1px solid #343a40; */
+        padding: 16px 24px;
+        text-align: left;
+      }
+
+      thead th {
+        background-color: #0c8599;
+        color: whitesmoke;
+        width: 25%;
+      }
+
+      tbody tr:nth-child(odd) {
+        background-color: rgb(201, 201, 201);
+      }
+      tbody tr:nth-child(even) {
+        background-color: rgb(230, 230, 230);
       }
     </style>
   </head>
