@@ -33,7 +33,6 @@
       }
 
       nav,
-      menu,
       section,
       main,
       aside {
@@ -51,6 +50,10 @@
         background-color: fuchsia;
         color: ghostwhite;
         grid-column: 2 / -1;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0 40px;
       }
 
       button {
@@ -58,10 +61,43 @@
         background-color: lime;
         border: none;
         cursor: pointer;
+        color: fuchsia;
+        padding: 8px 12px;
+        font-weight: bold;
+        display: inline-block;
+      }
+
+      button:last-child {
+        background-color: rgb(125, 0, 79);
+        color: rgb(254, 208, 252);
+        margin-left: auto;
+      }
+
+      button:link,
+      button:visited {
       }
 
       section {
         background-color: khaki;
+        padding: 40px;
+
+        overflow: scroll;
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .email {
+        background-color: orchid;
+        color: lime;
+        height: 96px;
+
+        flex-shrink: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       aside {
@@ -78,7 +114,18 @@
       <button>Mark Unread</button>
       <button>Trash</button>
     </menu>
-    <section>Inbox</section>
+    <section>
+      <div class="email">email 1</div>
+      <div class="email">email 2</div>
+      <div class="email">email 3</div>
+      <div class="email">email 4</div>
+      <div class="email">email 5</div>
+      <div class="email">email 6</div>
+      <div class="email">email 7</div>
+      <div class="email">email 8</div>
+      <div class="email">email 9</div>
+      <div class="email">email 10</div>
+    </section>
     <main>email</main>
     <aside>Additional info</aside>
     <script src="script.js"></script>
